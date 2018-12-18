@@ -9,4 +9,3 @@ a = '추가.'
 print('지금 원/달러 환율은 ' + result + ' 입니다.')
 print(f'지금 원/달러 환율은 {result} 입니다. {a}')
 print('지금 원/달러 환율은 {} 입니다. {}'.format(result, a))
-

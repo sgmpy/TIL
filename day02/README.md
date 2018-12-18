@@ -27,3 +27,43 @@
 
 ## 파일 조작
 
+
+
+file write, read 활용해서 역순으로 저장
+
+
+
+ssafy.txt
+
+1
+
+2
+
+3
+
+
+
+ssafy_reverse.txt
+
+3
+
+2
+
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -49,3 +49,12 @@ git config --global user.name 'Junwoo Hwang'
 - `ctrl + backtick ` : 터미널 보기
 - `ctrl + l` : 터미널 clear
 
+
+
+### 파일명 변경
+
+1. `os.chdir(r'폴더 주소')`
+
+2. `os.listdir('.')`: 현재 working directory의 파일 목록 리스트로
+
+3. `os.rename('바꾸려고 이름', '바꿀 이름')`

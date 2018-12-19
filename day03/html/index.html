@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTML Practice</title>
+        <style>
+            h1, h3 {
+                color: red;
+                background-color: lightblue;
+            }
+            h2 {
+                color: blue;
+            }
+            #green {
+                color: green;
+            }
+            .yellow {
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            이것은 주석입니다.
+            여러줄 가능합니다.
+        -->
+        <h1>이것은 <!-- h1 --> 태그입니다.</h1>
+        <h2>이것은 h2 태그입니다.</h2>
+        <h3>이것은 h3 태그입니다.</h3>
+        <h4 id="green">이것은 h4 태그입니다.</h4>
+        <h5 class="yellow">이것은 h5 태그입니다.</h5>
+        <h6 class="yellow">이것은 h6 태그입니다.</h6>
+        
+        <!-- css 우선 순위 : inline > id > class > tag -->
+        <p class="yellow" style="color: pink;">
+            이것은 p 태그입니다. <br>
+            이것은 p 태그입니다. <br>
+            이것은 p 태그입니다. <br>
+            이것은 p 태그입니다.
+        </p>
+
+        <ul>
+            <li>리스트 1번째</li>
+            <li>리스트 2번째</li>
+            <li>리스트 3번째</li>
+        </ul>
+
+        <ol>
+            <li>리스트 1번째</li>
+            <li>리스트 2번째</li>
+            <li>리스트 3번째</li>
+        </ol>
+
+        <div>
+            <b>여기는 div입니다.</b>
+            <i>여기는 div입니다.</i>
+        </div>
+
+        <!-- 1. 이미지 파일 -->
+        <div>
+            <img src="./ocean.jpg" alt="바다" width="100px" height="100px">
+        </div>
+
+        <!-- 2. 이미지 url -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/LhotseMountain.jos.500pix.jpg/450px-LhotseMountain.jos.500pix.jpg" alt="산">
+    </body>
+</html>

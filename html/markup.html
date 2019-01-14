@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table, tr, td {
+            border: 1px solid darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>프로그래밍 교육</h1>
+    <a href="#python">
+        <img src="images/python.png" alt="python" width="50px">
+    </a>
+    <a href="#web">
+        <img src="images/web.png" alt="web" width="50px">
+    </a>
+    <a href="index.html">참고사이트</a>
+    <hr>
+    <section id="python">
+        <h2>
+            <a href="https://docs.python.org/ko/3/tutorial/index.html">파이썬</a>
+        </h2>
+        <h3>Number type</h3>
+        <p>파이썬에서 숫자형은 아래와 같이 있다.</p>
+        <ol>
+            <li>int</li>
+            <li>float</li>
+            <li>complex</li>
+            <li><del>str</del></li>
+        </ol>
+        <h3>Sequence</h3>
+        <p>파이썬에서 시퀀스는 아래와 같이 있다.</p>
+        <p><strong>시퀀스는 for문을 돌릴 수 있다!!</strong></p>
+        <ol>
+            <li>str</li>
+            <li>list</li>
+            <li>tuple</li>
+            <li>range</li>
+        </ol>
+    </section>
+    <section id="web">
+        <h2>
+            <a href="https://developer.mozilla.org/ko/" target="_blank">웹</a>
+        </h2>
+        <h3>기초</h3>
+        <!-- none, square, circle, lower-alpha,
+            upper-alpha, upper-roman, ... -->
+        <ul style="list-style-type: circle;">
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </section>
+
+    <section id="link">
+        <!-- a(anchor) -->
+        <!-- href values -->
+        <!-- 1. 절대 URL -->
+        <a href="https://www.google.com" target="_self">절대 URL</a>
+        <!-- 2. 상대 URL -->
+        <a href="index.html" target="_blank">상대 URL</a>
+        <!-- 3. element id -->
+        <a href="#python">파이썬으로(id="python" 찾아가기)</a>
+        <!-- 4. mailto: -->
+        <a href="mailto:no.water.in.the.house@gmail.com">메일 보내기</a>
+    </section>
+
+    <section>
+        <!-- img -->
+        <!-- src : 파일 경로, alt : 이미지 설명, width & height : 사이즈 지정 -->
+        <img src="images/ocean.jpg" alt="바다" width="200px" height="200px">
+
+        <!-- video -->
+        <!-- src : 파일 경로, width & hegith : 사이즈 지정, controls : 컨트롤 패널 활성화 -->
+        <video src="video.mp4" width="300px" height="" controls></video>
+
+        <!-- iframe -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xXFdnHiGwos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <!-- table -->
+        <table>
+            <!-- table row -->
+            <tr>
+                <!-- table head -->
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+            </tr>
+            <tr>
+                <!-- table data -->
+                <td>A 코스</td>
+                <!-- rowspan : 세로 칸 길이 -->
+                <td rowspan="2">짬뽕</td>
+                <!-- colspan : 가로 칸 길이 -->
+                <td colspan="2">초밥</td>
+            </tr>
+            <tr>
+                <td>B 코스</td>
+                <td>김치찌개</td>
+                <td>삼계탕</td>
+            </tr>
+        </table>
+
+        <h1>2019 타임테이블</h1>
+        <table>
+            <tr>
+                <th>TIME</th>
+                <th>INDOOR</th>
+                <th colspan="2">OUTDOOR</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>소극장</td>
+                <td>잔디마당</td>
+                <td>대공연장</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td rowspan="2">안녕하신가영</td>
+                <td></td>
+                <td>10CM</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td rowspan="2">선우정아</td>
+                <td rowspan="2">참깨와 솜사탕</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17:00</td>
+                <td>크러쉬</td>
+                <td></td>
+                <td>폴킴</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <!-- form -->
+        <form action="" method="GET">
+            <!-- text -->
+            <input type="text">
+            <!-- password -->
+            <input type="password">
+            <!-- number -->
+            <input type="number" min="15" max="30" step="15" value="15">
+            <!-- radio -->
+            <div>
+                <input type="radio" name="sandwich" checked>에그 마요<br>
+                <input type="radio" name="sandwich" disabled>이탈리안 비엠티<br>
+                <input type="radio" name="sandwich">터키 베이컨 아보카도<br>
+            </div>
+            <!-- checkbox -->
+            <div>
+                <input type="checkbox" name="topping" checked>토마토<br>
+                <input type="checkbox" name="topping" disabled>오이<br>
+                <input type="checkbox" name="topping">할라피뇨<br>
+                <input type="checkbox" name="topping">핫 칠리<br>
+                <input type="checkbox" name="topping">바베큐 소스<br>
+            </div>
+            <!-- select -->
+            <select name="" id="">
+                <option>허니오트</option>
+                <option disabled>플랫브레드</option>
+                <option selected>파마산 오레가노</option>
+            </select>
+
+            <input type="submit" value="로그인">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 복합 선택자 */
+/* 1. 자손 선택자 */
+/* section안의 모든 ul */
+section ul {
+    margin: 10px 0;
+}
+
+/* 2. 자식 선택자 */
+/* > */
+/* section 바로 아래의 ul, 그 ul 바로 아래의 li */
+section > ul > li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 3. 형제 선택자 */
+/* + */
+/* a의 형제 요소 중 a 바로 뒤에 오는 ul */
+a + ul {
+    background-color: gold;
+}
+/* ~ */
+/* a의 형제 요소 중 a 뒤에 오는 모든 ul */
+a ~ ul {
+    border: 1px solid darkgray;
+}
+
+
+/* 속성 선택자 */
+/* class라는 속성을 가진 ul의 자손 중 li */
+ul[class] li {
+    width: 24%;
+    height: 50px;
+    display: inline-block;
+}
+
+/* target 속성을 가지며, 그 값이 _self인 a */
+a[target="_self"] {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+
+
+/* 
+    1. [속성="값"] : img alt="바다 사진" / [alt="바다 사진"]
+    2. [속성~="값"] : img alt="바다 사진" / [alt~="바다"]
+    3. [속성|="값"] : img alt="바다-사진" / [alt|="바다"]
+    4. [속성^="값"] : img alt="apple banana" / [alt^="app"]
+    5. [속성$="값"] : a href="ssafy.com/istj" / [href$="istj"]
+    6. [속성*="값"] : img alt="미세먼지싫어" / [alt*="세먼지"]
+*/

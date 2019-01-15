@@ -1,0 +1,15 @@
+div {
+    height: 200px;
+}
+
+.background-color {
+    background-color: blue;
+}
+
+.background-image {
+    background-image: url(images/ocean.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

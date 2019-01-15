@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* colors */
+        /* 1. color name */
+        h1 {
+            color: red;
+        }
+        /* 2. color code */
+        h2 {
+            color: #0000ff;
+        }
+        /* 3. rgb() */
+        h3 {
+            color: rgb(0,255,0);
+        }
+        /* 4. rgba() */
+        p {
+            color: rgba(255,0,0,0.3); /* alpha : 0.0 ~ 1.0 */
+        }
+
+        /* 단위 길이(font-size) */
+        /* html {
+            font-size: 10px;
+        } */
+        /* rem : html에 정의된 font-size에 비례 */
+        ol {
+            font-size: 1.2rem;
+            /* 10px * 1.2 = 12px */
+        }
+        /* em : 자신의 상위 요소의 font-size에 비례 */
+        ul {
+            font-size: 1.2em;
+        }
+        .em {
+            font-size: 1.2em;
+        }
+        /* 10px(html) * 1.2(ul) * 1.2(li) = 14.4px */
+
+        /* vh - view height, vw - view width */
+        .vh {
+            font-size: 5vh;
+        }
+        .vw {
+            font-size: 5vw;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        저는 10px입니다.
+    </div>
+    <!-- 1.2rem == 12px -->
+    <ol>
+        <li>저는 1.2rem입니다.</li>
+    </ol>
+    <!-- 1.2em == 12px == 10px(html) * 1.2 -->
+    <ul>
+        <!-- 1.2em == 14.4px == 10px(html) * 1.2(ul) * 1.2(li) -->
+        <li class="em">저는 1.2em입니다.</li>
+    </ul>
+
+    <span class="vh">5vh</span>
+    <span class="vw">5vw</span>
+
+    <h1>빨간색</h1>
+    <h2>파란색</h2>
+    <h3>초록색</h3>
+    <p>흐릿한 빨간색(투명도)</p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <style>
+        .flex-container {
+            height: 800px;
+            padding: 16px;
+            border: 2px solid red;
+        }
+        .flex-item {
+            padding: 16px;
+            border: 2px solid blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. d-flex -->
+    <!-- { display: flex; } -->
+    <!-- 2. flex-row -->
+    <!-- { flex-direction: row; } -->
+    <!-- 3. justify-content-start -->
+    <!-- { justify-content: flex-start; } -->
+    <!-- 4. align-items-start -->
+    <!-- { align-items: start; } -->
+    <!-- 5. align-self-start(item 전용) -->
+    <!-- { align-self: flex-start; } -->
+    <!-- 6. flex-grow-1 (item 전용) -->
+    <!-- { flex-grow: 1; } -->
+    <!-- 7. flex-wrap-reverse -->
+    <!-- { flex-wrap: wrap-reverse; } -->
+    <!-- 8. align-content-start -->
+    <!-- { align-content: flex-start; } -->
+    <div class="flex-container d-flex justify-content-around align-item-start flex-wrap-reverse">
+        <div class="flex-item flex-grow-1">01</div>
+        <div class="flex-item">02</div>
+        <div class="flex-item flex-grow-1">03</div>
+        <div class="flex-item">04</div>
+        <div class="flex-item align-self-start">05</div>
+        <div class="flex-item">06</div>
+        <div class="flex-item">07</div>
+        <div class="flex-item">08</div>
+        <div class="flex-item">09</div>
+        <div class="flex-item">10</div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+</html>

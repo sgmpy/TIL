@@ -1,0 +1,102 @@
+/* 표현 방법
+@media not|only mediatype and|, (조건) {
+    실행문;
+}
+1. not : 부정
+2. only : 말 그대로 only, 이것만.
+3. mediatype : all(모두, 기본값), screen(화면), print(출력), braille(점자), tv 등
+4. and 또는 ,(or) : 조건 and, or
+5. 조건문 : ex) min-width: 800px
+6. 실행문 : CSS 규칙
+*/
+
+h1 {
+    color: red;
+}
+
+@media (min-width: 800px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* 주로 사용되는 조건 */
+/* 1. width */
+/* viewport의 너비. */
+h2 {
+    color: green;
+}
+
+@media (width: 800px) {
+    h2 {
+        color: yellow;        
+    }
+}
+
+/* 2. min-width, max-width */
+/* 가장 일반적으로 사용하는 조건. */
+h3 {
+    color: grey;
+}
+
+@media (min-width:600px) and (max-width: 800px) {
+    h3 {
+        color: purple;
+    }
+}
+
+/* 3. height, min-height, max-height */
+h4 {
+    color: orange;
+}
+
+@media (min-height: 400px) and (max-height: 500px) {
+    h4 {
+        color: aqua;
+    }
+}
+
+/* 4. orientation */
+h1.ori::after {
+    content: '가로입니다.'
+}
+
+@media (orientation: portrait) {
+    h1.ori::after {
+        content: '세로입니다.'
+    }
+}
+
+/* Bootstrap 흉내내기 */
+/* 0 ~ 576px */
+.rainbow {
+    color: red;
+}
+
+/* 576px 이상 */
+@media (min-width: 576px) { /* 576 <= width */
+    .rainbow {
+        color: orange;
+    }
+}
+
+/* 768px 이상 */
+@media (min-width: 768px) {
+    .rainbow {
+        color: yellow;
+    }
+}
+
+/* 992px 이상 */
+@media (min-width: 992px) {
+    .rainbow {
+        color: green;
+    }
+}
+
+/* 1200px 이상 */
+@media (min-width: 1200px) {
+    .rainbow {
+        color: blue;
+    }
+}

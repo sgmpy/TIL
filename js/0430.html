@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- JS 위치 1 -->
+</head>
+<body>
+
+    <!-- JS 위치 2 -->
+    <script>
+        /*
+            This is
+            Comment
+        */
+        // alert('Welcome to JS!')
+
+        // 문서에 출력하기
+        document.write('<h1>Hello, World!</h1>')
+
+        // 변수 선언
+        // let : 재할당 가능
+        let word1 = '외안되<br>'
+        document.write(word1)
+        // word1 = '왜안돼' // 문제 없음
+
+        // const : 재할당 불가능
+        const word2 = '외안되'
+        document.write(word2)
+        // word2 = '왜안돼' // 에러 발생
+
+        // 문자열 조작
+        const firstName = 'happy'
+        const lastName = 'hacking'
+        const fullName = firstName + lastName
+        document.write('<h1>' + fullName + '!!' + '</h1>')
+        document.write(`<h1>${fullName}!!</h1>`)
+        
+        // console에 출력하기
+        console.log(`Console: ${fullName}`)
+
+        // 사용자 입력 받기
+        // Python : user_name (snake_case)
+        // JS : userName (CamelCase)
+        const userName = prompt('Hello! Who are you?')
+        let message = ''
+        // if문
+        if (userName === 'admin') {
+            message = '<h1>This is secret Admin page</h1>'
+        } else if (userName === 'nwith') {
+            message = '<h1>No water in the house?</h1>'
+        } else {
+            message = `<h1>Hello ${userName}</h1>`
+        }
+
+        // == vs. ===
+        // == : '값'만 비교 (ex. 0 == "0"는 true)
+        // === : '값' & '타입' 비교 (ex. 0 === "0" false)
+        
+        document.write(message)
+
+        // 삼항 연산자
+        const number = 10
+        number === 10 ? document.write('number === 10') : document.write('number !== 10')
+
+        // 세미콜론 테스트
+        const a = 1
+        const b = 2
+        const c = a + b;
+        
+        (a+b).toString()
+    </script>
+</body>
+</html>

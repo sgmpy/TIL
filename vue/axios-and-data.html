@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="post in posts">
+                <h3>{{ post.id }}. {{ post.title }}</h3>
+                <span>userId: {{ post.userId + 1 }}</span>
+                <p>{{ post.body }}</p>
+            </li>
+        </ul>
+    </div>
+    
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                posts: [],
+            },
+            methods: {
+                getPosts: function(){
+                    axios.get('https://jsonplaceholder.typicode.com/posts')
+                            .then((response)=>{
+                                return response.data
+                            })
+                            .then((posts)=>{
+                                // posts = [{ ... },{ ... },{ ... }]
+
+                                // 1. forEach
+                                posts.forEach((post)=>{
+                                    // post = { ... }
+                                    // 그냥 반복만
+                                })
+
+                                // 2. map
+                                const newPosts = posts.map((post)=>{
+                                    // return 값을 가지고 새로운 배열 만듦
+                                    return post
+                                })
+                                // console.log(newPosts)
+
+                                // 3. filter
+                                // const numbers = [1,2,3,4,5]
+                                // const filteredNumbers = numbers.filter((number)=>{
+                                //     return number % 2
+                                // })
+                                // console.log(filteredNumbers)
+
+                                const filteredPosts = posts.filter((post)=>{
+                                    // return이 true인 item들로만 새로운 배열 만듦.
+                                    return post.userId === 2
+                                })
+
+                                this.posts = filteredPosts // this.$data.posts
+                            })
+                }
+            },
+        })
+    </script>
+</body>
+</html>
